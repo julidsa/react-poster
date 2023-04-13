@@ -5,7 +5,7 @@ import style from "./PostList.module.css";
 
 export default function List() {
     const posts = useLoaderData()
-    const myPosts = posts.map((post) => <Post key={post.body} author={post.author} body={post.body} />)
+    const myPosts = posts.map((post) => <Post key={post.id} id={post.id} author={post.author} body={post.body} />)
 
     return (
         <>  
